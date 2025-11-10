@@ -14,7 +14,7 @@ showProblem(topic, newIndex, problems, appState)
 
 // Ocultar feedback y pistas
 hideFeedback(topic)
-}
+} 
 
  
 
