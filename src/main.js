@@ -18,19 +18,20 @@ import { hideFeedback, showHint } from './utils.js';
 const problems = problemsData;
 // Estado de la aplicación
 const appState = {
-currentTopic: 'operations',
+currentTopic: 'operations', 
 currentProblem: 0,
 progress: {
     operations: { correct: 0, total: 0 },
     polynomials: { correct: 0, total: 0 },
     equations: { correct: 0, total: 0 },
+    factoring: { correct: 0, total: 0 },
 },
 }
 
 // Inicializar la aplicación
 function initApp() {
 // Cargar progreso desde localStorage
-loadProgress(appState)
+loadProgress(appState, updateProgressBars)
 
 // Configurar eventos de los temas
 document.querySelectorAll('.topic-item').forEach((item) => {
@@ -44,7 +45,7 @@ document.querySelectorAll('.topic-item').forEach((item) => {
 setupEventListeners()
 
 // Mostrar el primer problema
-showProblem('operations', 0, problems)
+showProblem('operations', 0, problems, appState)
 
 // Actualizar MathJax
 if (window.MathJax) {
@@ -75,7 +76,7 @@ appState.currentTopic = topic
 appState.currentProblem = 0
 
 // Mostrar problema actual
-showProblem(topic, 0)
+showProblem(topic, 0, problems, appState)
 
 // Ocultar feedback y pasos
 hideFeedback(topic)
@@ -89,10 +90,10 @@ document
     .addEventListener('click', () => checkAnswer('operations'))
 document
     .getElementById('hint-operations')
-    .addEventListener('click', () => showHint('operations'))
+    .addEventListener('click', () => showHint('operations', problems, appState))
 document
     .getElementById('new-operations')
-    .addEventListener('click', () => newProblem('operations'))
+    .addEventListener('click', () => newProblem('operations', problems, appState))
 
 // Polinomios
 document
@@ -100,10 +101,10 @@ document
     .addEventListener('click', () => checkAnswer('polynomials'))
 document
     .getElementById('hint-polynomials')
-    .addEventListener('click', () => showHint('polynomials'))
+    .addEventListener('click', () => showHint('polynomials', problems, appState))
 document
     .getElementById('new-polynomials')
-    .addEventListener('click', () => newProblem('polynomials'))
+    .addEventListener('click', () => newProblem('polynomials', problems, appState))
 
 // Ecuaciones
 document
@@ -111,10 +112,10 @@ document
     .addEventListener('click', () => checkAnswer('equations'))
 document
     .getElementById('hint-equations')
-    .addEventListener('click', () => showHint('equations'))
+    .addEventListener('click', () => showHint('equations', problems, appState))
 document
     .getElementById('new-equations')
-    .addEventListener('click', () => newProblem('equations'))
+    .addEventListener('click', () => newProblem('equations', problems, appState))
 
 // Factorización
 document
@@ -122,10 +123,10 @@ document
     .addEventListener('click', () => checkAnswer('factoring'))
 document
     .getElementById('hint-factoring')
-    .addEventListener('click', () => showHint('factoring'))
+    .addEventListener('click', () => showHint('factoring', problems, appState))
 document
     .getElementById('new-factoring')
-    .addEventListener('click', () => newProblem('factoring'))
+    .addEventListener('click', () => newProblem('factoring', problems, appState))
 }
 
 
@@ -195,10 +196,10 @@ if (normalizedUserAnswer === normalizedCorrectAnswer) {
 }
 
 // Actualizar UI de progreso
-updateProgressBars()
+updateProgressBars(appState)
 
 // Guardar progreso
-saveProgress()
+saveProgress(appState)
 }
 
 // Inicializar la aplicación cuando el DOM esté listo

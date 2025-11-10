@@ -1,10 +1,10 @@
 
 
 // Cargar progreso desde localStorage
-export function loadProgress(appState) {
+export function loadProgress(appState, updateProgressBars) {
 const savedProgress = localStorage.getItem('algebraProgress')
 if (savedProgress) {
-    appState.progress = JSON.parse(savedProgress)
+    Object.assign(appState.progress, JSON.parse(savedProgress))
     updateProgressBars(appState)
 }
 }
@@ -13,7 +13,7 @@ if (savedProgress) {
 
 // Guardar progreso en localStorage
 export function saveProgress(appState) {
-localStorage.setItem(
+localStorage.setItem( 
     'algebraProgress',
     JSON.stringify(appState.progress)
 )

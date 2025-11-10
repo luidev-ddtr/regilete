@@ -1,7 +1,7 @@
 import { hideFeedback } from './utils.js'
 
 
-export function newProblem(topic) {
+export function newProblem(topic, problems, appState) {
 // Seleccionar un problema aleatorio
 const totalProblems = problems[topic].length
 let newIndex
@@ -10,15 +10,15 @@ do {
 } while (newIndex === appState.currentProblem && totalProblems > 1)
 
 appState.currentProblem = newIndex
-showProblem(topic, newIndex)
+showProblem(topic, newIndex, problems, appState)
 
 // Ocultar feedback y pistas
 hideFeedback(topic)
 }
 
+ 
 
-
-export function showProblem(topic, index, problems) {
+export function showProblem(topic, index, problems, appState) {
 const problemData = problems[topic][index]
 document.getElementById(
     `${topic}-problem`
