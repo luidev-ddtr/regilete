@@ -1,0 +1,134 @@
+{
+  "operations": [
+    {
+      "problem": "3x + 5 - 2x + 7",
+      "answer": "x + 12",
+      "steps": [
+        "Identificar términos semejantes: 3x y -2x son términos con x; 5 y 7 son constantes",
+        "Combinar términos con x: 3x - 2x = x",
+        "Combinar constantes: 5 + 7 = 12",
+        "Resultado: x + 12"
+      ]
+    },
+    {
+      "problem": "4a - 2b + 3a + 5b",
+      "answer": "7a + 3b",
+      "steps": [
+        "Identificar términos semejantes: 4a y 3a son términos con a; -2b y 5b son términos con b",
+        "Combinar términos con a: 4a + 3a = 7a",
+        "Combinar términos con b: -2b + 5b = 3b",
+        "Resultado: 7a + 3b"
+      ]
+    },
+    {
+      "problem": "5x - 3 + 2x + 8 - x",
+      "answer": "6x + 5",
+      "steps": [
+        "Identificar términos semejantes: 5x, 2x y -x son términos con x; -3 y 8 son constantes",
+        "Combinar términos con x: 5x + 2x - x = 6x",
+        "Combinar constantes: -3 + 8 = 5",
+        "Resultado: 6x + 5"
+      ]
+    }
+  ],
+  "polynomials": [
+    {
+      "problem": "(3x² + 2x - 5) + (2x² - 4x + 3)",
+      "answer": "5x² - 2x - 2",
+      "steps": [
+        "Eliminar paréntesis: 3x² + 2x - 5 + 2x² - 4x + 3",
+        "Agrupar términos semejantes: (3x² + 2x²) + (2x - 4x) + (-5 + 3)",
+        "Sumar coeficientes: 5x² - 2x - 2",
+        "Resultado: 5x² - 2x - 2"
+      ]
+    },
+    {
+      "problem": "(4x² - 3x + 2) - (2x² + x - 5)",
+      "answer": "2x² - 4x + 7",
+      "steps": [
+        "Distribuir el signo negativo: 4x² - 3x + 2 - 2x² - x + 5",
+        "Agrupar términos semejantes: (4x² - 2x²) + (-3x - x) + (2 + 5)",
+        "Sumar/Restar coeficientes: 2x² - 4x + 7",
+        "Resultado: 2x² - 4x + 7"
+      ]
+    },
+    {
+      "problem": "2x(3x - 4)",
+      "answer": "6x² - 8x",
+      "steps": [
+        "Aplicar propiedad distributiva: 2x * 3x + 2x * (-4)",
+        "Multiplicar términos: 6x² - 8x",
+        "Resultado: 6x² - 8x"
+      ]
+    }
+  ],
+  "equations": [
+    {
+      "problem": "3x + 7 = 22",
+      "answer": "x = 5",
+      "steps": [
+        "Restar 7 de ambos lados: 3x + 7 - 7 = 22 - 7",
+        "Simplificar: 3x = 15",
+        "Dividir ambos lados entre 3: 3x/3 = 15/3",
+        "Simplificar: x = 5"
+      ]
+    },
+    {
+      "problem": "2(x - 3) = 10",
+      "answer": "x = 8",
+      "steps": [
+        "Distribuir: 2x - 6 = 10",
+        "Sumar 6 a ambos lados: 2x - 6 + 6 = 10 + 6",
+        "Simplificar: 2x = 16",
+        "Dividir ambos lados entre 2: 2x/2 = 16/2",
+        "Simplificar: x = 8"
+      ]
+    },
+    {
+      "problem": "5x - 3 = 2x + 9",
+      "answer": "x = 4",
+      "steps": [
+        "Restar 2x de ambos lados: 5x - 2x - 3 = 2x - 2x + 9",
+        "Simplificar: 3x - 3 = 9",
+        "Sumar 3 a ambos lados: 3x - 3 + 3 = 9 + 3",
+        "Simplificar: 3x = 12",
+        "Dividir ambos lados entre 3: 3x/3 = 12/3",
+        "Simplificar: x = 4"
+      ]
+    }
+  ],
+  "factoring": [
+      {
+    "problem": "3x + 12",
+    "answer": "3(x + 4)",
+    "steps": [
+      "Identificar el máximo común divisor (MCD) de los coeficientes 3 y 12, que es 3.",
+      "El factor común es 3.",
+      "Dividir cada término por el factor común: 3x/3 = x; 12/3 = 4.",
+      "Escribir el factor común fuera de un paréntesis: 3(x + 4)."
+    ]
+  },
+  {
+    "problem": "8a² - 16a",
+    "answer": "8a(a - 2)",
+    "steps": [
+      "Identificar el MCD de 8 y 16, que es 8.",
+      "Identificar la variable común con el menor exponente: 'a'.",
+      "El factor común completo es 8a.",
+      "Dividir cada término por 8a: 8a² / (8a) = a; -16a / (8a) = -2.",
+      "Escribir el resultado: 8a(a - 2)."
+    ]
+  },
+  {
+    "problem": "x² - 81",
+    "answer": "(x + 9)(x - 9)",
+    "steps": [
+      "Reconocer que es una resta (diferencia) de dos términos con raíz cuadrada exacta.",
+      "Calcular la raíz cuadrada del primer término: √x² = x.",
+      "Calcular la raíz cuadrada del segundo término: √81 = 9.",
+      "Aplicar la fórmula de diferencia de cuadrados (a+b)(a-b).",
+      "Sustituir: (x + 9)(x - 9)."
+    ]
+  }
+  ]
+}

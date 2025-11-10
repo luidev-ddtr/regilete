@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AlgebraInteractiva - Aprende Álgebra Paso a Paso</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/src/style.css" />
+
+    <!-- MathJax para renderizar notación matemática -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">
+          <i class="fas fa-square-root-alt"></i>
+          <h1>AlgebraInteractiva</h1>
+        </div>
+        <p class="subtitle">
+          Aprende álgebra paso a paso con retroalimentación inteligente
+        </p>
+      </header>
+
+      <div class="main-content">
+        <div class="sidebar">
+          <div class="sidebar-title">
+            <i class="fas fa-list"></i>
+            <span>Temas de Álgebra</span>
+          </div>
+          <ul class="topic-list">
+            <li class="topic-item active" data-topic="operations">
+              <i class="fas fa-calculator"></i>
+              <span>Operaciones Básicas</span>
+            </li>
+            <li class="topic-item" data-topic="polynomials">
+              <i class="fas fa-project-diagram"></i>
+              <span>Polinomios</span>
+            </li>
+            <li class="topic-item" data-topic="equations">
+              <i class="fas fa-equals"></i>
+              <span>Ecuaciones</span>
+            </li>
+            <li class="topic-item" data-topic="factoring">
+              <i class="fas fa-puzzle-piece"></i>
+              <span>Factorización</span>
+            </li>
+            <li class="topic-item" data-topic="practice">
+              <i class="fas fa-brain"></i>
+              <span>Práctica Integrada</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="content-area">
+          <!-- Operaciones Básicas -->
+          <div class="topic-content active" id="operations-content">
+            <div class="exercise-container">
+              <div class="exercise-title">
+                <i class="fas fa-calculator"></i>
+                <span>Operaciones con Expresiones Algebraicas</span>
+              </div>
+
+              <div class="problem-display" id="operations-problem">
+                \( 3x + 5 - 2x + 7 \)
+              </div>
+
+              <div class="input-group">
+                <label class="input-label">Simplifica la expresión:</label>
+                <input
+                  type="text"
+                  class="math-input"
+                  id="operations-answer"
+                  placeholder="Ej: x + 12"
+                />
+              </div>
+
+              <div class="button-group">
+                <button class="btn btn-primary" id="check-operations">
+                  <i class="fas fa-check"></i> Verificar Respuesta
+                </button>
+                <button class="btn btn-secondary" id="hint-operations">
+                  <i class="fas fa-lightbulb"></i> Pista
+                </button>
+                <button class="btn btn-warning" id="new-operations">
+                  <i class="fas fa-redo"></i> Nuevo Problema
+                </button>
+              </div>
+
+              <div class="feedback-container" id="operations-feedback">
+                <!-- Aquí se mostrará la retroalimentación -->
+              </div>
+
+              <div class="hint-container" id="operations-hint">
+                <strong><i class="fas fa-lightbulb"></i> Pista:</strong>
+                <span id="hint-text"
+                  >Combina los términos semejantes. Los términos con 'x' van
+                  juntos y los números constantes van juntos.</span
+                >
+              </div>
+
+              <div class="steps-container" id="operations-steps">
+                <h3>Pasos para resolver:</h3>
+                <div class="step">
+                  <span class="step-number">Paso 1:</span> Identifica términos
+                  semejantes
+                </div>
+                <div class="step">
+                  <span class="step-number">Paso 2:</span> Combina los
+                  coeficientes de términos semejantes
+                </div>
+                <div class="step">
+                  <span class="step-number">Paso 3:</span> Escribe la expresión
+                  simplificada
+                </div>
+              </div>
+            </div>
+
+            <div class="progress-container">
+              <div class="progress-text">
+                Progreso: <span id="operations-progress">0%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" id="operations-progress-bar"></div>
+              </div>
+              <div>
+                Problemas correctos:
+                <span id="operations-correct">0</span>/<span
+                  id="operations-total"
+                  >0</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Polinomios -->
+          <div class="topic-content" id="polynomials-content">
+            <div class="exercise-container">
+              <div class="exercise-title">
+                <i class="fas fa-project-diagram"></i>
+                <span>Operaciones con Polinomios</span>
+              </div>
+
+              <div class="problem-display" id="polynomials-problem">
+                \( (3x^2 + 2x - 5) + (2x^2 - 4x + 3) \)
+              </div>
+
+              <div class="input-group">
+                <label class="input-label">Resuelve la operación:</label>
+                <input
+                  type="text"
+                  class="math-input"
+                  id="polynomials-answer"
+                  placeholder="Ej: 5x² - 2x - 2"
+                />
+              </div>
+
+              <div class="button-group">
+                <button class="btn btn-primary" id="check-polynomials">
+                  <i class="fas fa-check"></i> Verificar Respuesta
+                </button>
+                <button class="btn btn-secondary" id="hint-polynomials">
+                  <i class="fas fa-lightbulb"></i> Pista
+                </button>
+                <button class="btn btn-warning" id="new-polynomials">
+                  <i class="fas fa-redo"></i> Nuevo Problema
+                </button>
+              </div>
+
+              <div class="feedback-container" id="polynomials-feedback">
+                <!-- Aquí se mostrará la retroalimentación -->
+              </div>
+
+              <div class="hint-container" id="polynomials-hint">
+                <strong><i class="fas fa-lightbulb"></i> Pista:</strong>
+                <span id="polynomials-hint-text"
+                  >Suma los coeficientes de términos con el mismo grado. Agrupa
+                  términos semejantes.</span
+                >
+              </div>
+
+              <div class="steps-container" id="polynomials-steps">
+                <h3>Pasos para resolver:</h3>
+                <div class="step">
+                  <span class="step-number">Paso 1:</span> Elimina paréntesis
+                </div>
+                <div class="step">
+                  <span class="step-number">Paso 2:</span> Agrupa términos
+                  semejantes
+                </div>
+                <div class="step">
+                  <span class="step-number">Paso 3:</span> Suma/Resta los
+                  coeficientes
+                </div>
+                <div class="step">
+                  <span class="step-number">Paso 4:</span> Ordena el polinomio
+                  resultante
+                </div>
+              </div>
+            </div>
+
+            <div class="progress-container">
+              <div class="progress-text">
+                Progreso: <span id="polynomials-progress">0%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" id="polynomials-progress-bar"></div>
+              </div>
+              <div>
+                Problemas correctos:
+                <span id="polynomials-correct">0</span>/<span
+                  id="polynomials-total"
+                  >0</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Ecuaciones -->
+          <div class="topic-content" id="equations-content">
+            <div class="exercise-container">
+              <div class="exercise-title">
+                <i class="fas fa-equals"></i>
+                <span>Ecuaciones de Primer Grado</span>
+              </div>
+
+              <div class="problem-display" id="equations-problem">
+                \( 3x + 7 = 22 \)
+              </div>
+
+              <div class="input-group">
+                <label class="input-label">Resuelve para x:</label>
+                <input
+                  type="text"
+                  class="math-input"
+                  id="equations-answer"
+                  placeholder="Ej: x = 5"
+                />
+              </div>
+
+              <div class="button-group">
+                <button class="btn btn-primary" id="check-equations">
+                  <i class="fas fa-check"></i> Verificar Respuesta
+                </button>
+                <button class="btn btn-secondary" id="hint-equations">
+                  <i class="fas fa-lightbulb"></i> Pista
+                </button>
+                <button class="btn btn-warning" id="new-equations">
+                  <i class="fas fa-redo"></i> Nuevo Problema
+                </button>
+              </div>
+
+              <div class="feedback-container" id="equations-feedback">
+                <!-- Aquí se mostrará la retroalimentación -->
+              </div>
+
+              <div class="hint-container" id="equations-hint">
+                <strong><i class="fas fa-lightbulb"></i> Pista:</strong>
+                <span id="equations-hint-text"
+                  >Aísla la variable realizando operaciones inversas en ambos
+                  lados de la ecuación.</span
+                >
+              </div>
+
+              <div class="steps-container" id="equations-steps">
+                <h3>Pasos para resolver:</h3>
+                <div class="step">
+                  <span class="step-number">Paso 1:</span> Resta 7 de ambos
+                  lados
+                </div>
+                <div class="step">
+                  <span class="step-number">Paso 2:</span> Divide ambos lados
+                  entre 3
+                </div>
+                <div class="step">
+                  <span class="step-number">Paso 3:</span> Verifica tu solución
+                </div>
+              </div>
+            </div>
+
+            <div class="progress-container">
+              <div class="progress-text">
+                Progreso: <span id="equations-progress">0%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" id="equations-progress-bar"></div>
+              </div>
+              <div>
+                Problemas correctos: <span id="equations-correct">0</span>/<span
+                  id="equations-total"
+                  >0</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Más temas (Factorización y Práctica) -->
+          <div class="topic-content" id="factoring-content">
+            <div class="exercise-container">
+              <div class="exercise-title">
+                <i class="fas fa-puzzle-piece"></i>
+                <span>Factorización de Expresiones</span>
+              </div>
+
+              <div class="problem-display" id="factoring-problem">
+                \( 3x + 12 \)
+              </div>
+
+              <div class="input-group">
+                <label class="input-label">Factoriza la expresión:</label>
+                <input
+                  type="text"
+                  class="math-input"
+                  id="factoring-answer"
+                  placeholder="Ej: 6(x + 2)"
+                />
+              </div>
+
+              <div class="button-group">
+                <button class="btn btn-primary" id="check-factoring">
+                  <i class="fas fa-check"></i> Verificar Respuesta
+                </button>
+                <button class="btn btn-secondary" id="hint-factoring">
+                  <i class="fas fa-lightbulb"></i> Pista
+                </button>
+                <button class="btn btn-warning" id="new-factoring">
+                  <i class="fas fa-redo"></i> Nuevo Problema
+                </button>
+              </div>
+
+              <div class="feedback-container" id="factoring-feedback">
+                <!-- Aquí se mostrará la retroalimentación -->
+              </div>
+
+              <div class="hint-container" id="factoring-hint">
+                <strong><i class="fas fa-lightbulb"></i> Pista:</strong>
+                <span id="factoring-hint-text"
+                  >Factoriza la expresión dividiendo cada término por el factor común.</span
+                >
+              </div>
+
+              <div class="steps-container" id="factoring-steps">
+                <h3>Pasos para resolver:</h3>
+                <div class="step">
+                  <span class="step-number">Paso 1:</span> Identificar el factor común
+                </div>
+                <div class="step">
+                  <span class="step-number">Paso 2:</span> Dividir cada término por el factor común
+                </div>
+                <div class="step">
+                  <span class="step-number">Paso 3:</span> Escribir el factor común fuera de un paréntesis
+                </div>
+              </div>
+              
+            </div>
+
+            <div class="progress-container">
+              <div class="progress-text">
+                Progreso: <span id="factoring-progress">0%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" id="factoring-progress-bar"></div>
+              </div>
+              <div>
+                Problemas correctos: <span id="equations-correct">0</span>/<span
+                  id="equations-total"
+                  >0</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="topic-content" id="practice-content">
+            <div class="exercise-container">
+              <div class="exercise-title">
+                <i class="fas fa-brain"></i>
+                <span>Práctica Integrada</span>
+              </div>
+              <p>Contenido en desarrollo. Próximamente...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <p>
+          AlgebraInteractiva - Concurso de Creatividad 2025 | ¡Aprende álgebra
+          de forma interactiva!
+        </p>
+      </footer>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
