@@ -5,8 +5,6 @@ document.getElementById(`${topic}-steps`).style.display = 'none'
 document.getElementById(`${topic}-hint`).style.display = 'none'
 }
 
-
-
 // Mostrar pista
 export function showHint(topic, problems, appState) {
 const hintElement = document.getElementById(`${topic}-hint`)
