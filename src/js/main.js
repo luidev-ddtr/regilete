@@ -113,7 +113,7 @@ function checkAnswer(topic) {
         document.getElementById(`check-${topic}`).disabled = true;
         document.getElementById(`new-${topic}`).disabled = true;
 
-        // Esperar 2 segundos antes de cambiar de problema
+        // Esperar 3.5 segundos antes de cambiar de problema
         setTimeout(() => {
             const exerciseContainer = document.getElementById(`${topic}-content`).querySelector('.exercise-container');
             exerciseContainer.classList.add('fade-out');
@@ -123,7 +123,7 @@ function checkAnswer(topic) {
                 newProblem(topic, problems, appState);
                 exerciseContainer.classList.remove('fade-out'); // Prepara para el fade-in
             }, 300);
-        }, 2000); // 2 segundos de espera
+        }, 3500); // 3.5 segundos de espera
 
     } else {
         UI.showIncorrectFeedback(topic, userAnswer, problemData.answer, problemData.steps);

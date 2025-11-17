@@ -15,7 +15,7 @@ export function loadProgress(appState, updateUICallback) {
             }
         }
         updateUICallback();
-    }
+    } 
 }
 
 export function saveProgress(appState) {
