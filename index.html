@@ -8,7 +8,7 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+    />
 
     <!-- MathJax para renderizar notación matemática -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
@@ -17,13 +17,13 @@
       async
       src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
     ></script>
-    <script type="module" crossorigin src="/regilete/assets/index-Cm9Daldx.js"></script>
-    <link rel="stylesheet" crossorigin href="/regilete/assets/index-kwe2jE3S.css">
+    <script type="module" crossorigin src="/regilete/assets/index-BwG42xed.js"></script>
+    <link rel="stylesheet" crossorigin href="/regilete/assets/index-265WZeC9.css">
   </head>
   <body>
     <div class="container">
-      <header>
-        <div class="logo">
+      <header> 
+        <div class="logo"> 
           <i class="fas fa-square-root-alt"></i>
           <h1>AlgebraInteractiva</h1>
         </div>
@@ -31,7 +31,6 @@
           Aprende álgebra paso a paso con retroalimentación inteligente
         </p>
       </header>
-
       <div class="main-content">
         <div class="sidebar">
           <div class="sidebar-title">
@@ -61,7 +60,6 @@
             </li>
           </ul>
         </div>
-
         <div class="content-area">
           <!-- Operaciones Básicas -->
           <div class="topic-content active" id="operations-content">
@@ -74,7 +72,7 @@
               <div class="problem-display" id="operations-problem">
                 \( 3x + 5 - 2x + 7 \)
               </div>
-
+7
               <div class="input-group">
                 <label class="input-label">Simplifica la expresión:</label>
                 <input
@@ -96,19 +94,13 @@
                   <i class="fas fa-redo"></i> Nuevo Problema
                 </button>
               </div>
-
               <div class="feedback-container" id="operations-feedback">
                 <!-- Aquí se mostrará la retroalimentación -->
               </div>
-
               <div class="hint-container" id="operations-hint">
                 <strong><i class="fas fa-lightbulb"></i> Pista:</strong>
-                <span id="hint-text"
-                  >Combina los términos semejantes. Los términos con 'x' van
-                  juntos y los números constantes van juntos.</span
-                >
+                <span id="operations-hint-text">Combina los términos semejantes. Los términos con 'x' van juntos y los números constantes van juntos.</span>
               </div>
-
               <div class="steps-container" id="operations-steps">
                 <h3>Pasos para resolver:</h3>
                 <div class="step">
@@ -125,7 +117,6 @@
                 </div>
               </div>
             </div>
-
             <div class="progress-container">
               <div class="progress-text">
                 Progreso: <span id="operations-progress">0%</span>
@@ -134,9 +125,7 @@
                 <div class="progress-fill" id="operations-progress-bar"></div>
               </div>
               <div>
-                Problemas correctos:
-                <span id="operations-correct">0</span>/<span
-                  id="operations-total"
+                Puntuación: <span id="operations-correct">0</span> | Intentos: <span id="operations-total"
                   >0</span
                 >
               </div>
@@ -217,9 +206,7 @@
                 <div class="progress-fill" id="polynomials-progress-bar"></div>
               </div>
               <div>
-                Problemas correctos:
-                <span id="polynomials-correct">0</span>/<span
-                  id="polynomials-total"
+                Puntuación: <span id="polynomials-correct">0</span> | Intentos: <span id="polynomials-total"
                   >0</span
                 >
               </div>
@@ -296,9 +283,8 @@
                 <div class="progress-fill" id="equations-progress-bar"></div>
               </div>
               <div>
-                Problemas correctos: <span id="equations-correct">0</span>/<span
-                  id="equations-total"
-                  >0</span
+                Puntuación: <span id="equations-correct">0</span> | Intentos: <span id="equations-total"
+                  >0</span 
                 >
               </div>
             </div>
@@ -344,9 +330,7 @@
 
               <div class="hint-container" id="factoring-hint">
                 <strong><i class="fas fa-lightbulb"></i> Pista:</strong>
-                <span id="factoring-hint-text"
-                  >Factoriza la expresión dividiendo cada término por el factor común.</span
-                >
+                <span id="factoring-hint-text">Factoriza la expresión dividiendo cada término por el factor común.</span>
               </div>
 
               <div class="steps-container" id="factoring-steps">
@@ -363,7 +347,6 @@
               </div>
               
             </div>
-
             <div class="progress-container">
               <div class="progress-text">
                 Progreso: <span id="factoring-progress">0%</span>
@@ -372,9 +355,8 @@
                 <div class="progress-fill" id="factoring-progress-bar"></div>
               </div>
               <div>
-                Problemas correctos: <span id="factoring-correct">0</span>/<span
-                  id="factoring-total"
-                  >0</span
+                Puntuación: <span id="factoring-correct">0</span> | Intentos: <span id="factoring-total"
+                  >0</span 
                 >
               </div>
             </div>
@@ -399,5 +381,26 @@
         </p>
       </footer>
     </div>
+
+    <!-- Modal de Victoria -->
+    <div id="victory-modal" class="modal-container" style="display: none;">
+      <div class="modal-content">
+        <span class="modal-close" id="modal-close-button">&times;</span>
+        <div class="modal-header" id="victory-header">
+          <!-- Icono y Título se insertarán dinámicamente -->
+        </div>
+        <div class="modal-body">
+          <p id="victory-message"></p>
+          <p><strong>Puntuación Final:</strong> <span id="victory-score"></span></p>
+          <p><strong>Intentos Totales:</strong> <span id="victory-attempts"></span></p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary" id="modal-next-topic-button">
+            Siguiente Tema
+          </button>
+        </div>
+      </div>
+    </div>
+
   </body>
 </html>
