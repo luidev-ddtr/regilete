@@ -1,0 +1,458 @@
+/* ============================================
+   Media Queries - Responsive Design
+   Optimizado para móviles 400x900px
+   ============================================ */
+
+/* Tablets y pantallas medianas (hasta 768px) */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        border-radius: 10px;
+    }
+
+    header {
+        padding: 20px 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 2px solid #ddd;
+        padding: 15px;
+    }
+
+    .sidebar-title {
+        font-size: 1.2rem;
+    }
+
+    .topic-item {
+        padding: 10px 12px;
+        font-size: 0.95rem;
+    }
+
+    .content-area {
+        padding: 20px 15px;
+    }
+
+    .exercise-title {
+        font-size: 1.3rem;
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+    }
+
+    .problem-display {
+        font-size: 1.2rem;
+        padding: 12px;
+    }
+
+    .button-group {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .btn {
+        width: 100%;
+        justify-content: center;
+        padding: 14px 20px;
+    }
+}
+
+/* Móviles pequeños (hasta 480px) - Optimizado para 400x900px */
+@media (max-width: 480px) {
+    body {
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    .container {
+        border-radius: 8px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Header */
+    header {
+        padding: 15px 10px;
+    }
+
+    .logo {
+        gap: 10px;
+        margin-bottom: 8px;
+    }
+
+    .logo i {
+        font-size: 1.8rem;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    .subtitle {
+        font-size: 0.85rem;
+        padding: 0 10px;
+    }
+
+    /* Sidebar */
+    .sidebar {
+        padding: 12px;
+    }
+
+    .sidebar-title {
+        font-size: 1.1rem;
+        margin-bottom: 15px;
+    }
+
+    .topic-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+
+    .topic-item {
+        padding: 10px 8px;
+        font-size: 0.85rem;
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+    }
+
+    .topic-item i {
+        font-size: 1.3rem;
+    }
+
+    .topic-item span {
+        font-size: 0.8rem;
+    }
+
+    /* Content Area */
+    .content-area {
+        padding: 15px 10px;
+    }
+
+    .exercise-container {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    .exercise-title {
+        font-size: 1.1rem;
+        gap: 8px;
+    }
+
+    .exercise-title i {
+        font-size: 1.3rem;
+    }
+
+    .exercise-title span {
+        font-size: 1rem;
+    }
+
+    /* Problem Display */
+    .problem-display {
+        font-size: 1.1rem;
+        padding: 12px 8px;
+        margin: 15px 0;
+        overflow-x: auto;
+    }
+
+    /* Input */
+    .input-group {
+        margin: 15px 0;
+    }
+
+    .input-label {
+        font-size: 0.95rem;
+        margin-bottom: 6px;
+    }
+
+    .math-input {
+        padding: 12px 10px;
+        font-size: 1.1rem;
+    }
+
+    /* Buttons */
+    .button-group {
+        gap: 10px;
+        margin: 15px 0;
+    }
+
+    .btn {
+        padding: 12px 16px;
+        font-size: 0.95rem;
+        gap: 6px;
+    }
+
+    .btn i {
+        font-size: 1rem;
+    }
+
+    /* Feedback */
+    .feedback-container {
+        padding: 12px;
+        font-size: 0.9rem;
+        margin-top: 15px;
+    }
+
+    .feedback-title {
+        font-size: 1rem;
+        margin-bottom: 8px;
+    }
+
+    .feedback-container p {
+        margin: 8px 0;
+    }
+
+    /* Steps */
+    .steps-container {
+        padding: 12px;
+        margin-top: 15px;
+    }
+
+    .steps-container h3 {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .step {
+        margin-bottom: 8px;
+        padding: 8px;
+        font-size: 0.85rem;
+    }
+
+    .step-number {
+        font-size: 0.9rem;
+    }
+
+    /* Hint */
+    .hint-container {
+        padding: 10px;
+        font-size: 0.85rem;
+        margin-top: 12px;
+    }
+
+    /* Progress */
+    .progress-container {
+        padding: 15px 12px;
+        margin-top: 15px;
+    }
+
+    .progress-text {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .progress-text::before {
+        font-size: 1.2rem;
+    }
+
+    .progress-text span {
+        font-size: 1.2rem;
+    }
+
+    .progress-bar {
+        height: 12px;
+        margin: 10px 0;
+    }
+
+    .progress-container > div:last-child {
+        font-size: 0.95rem;
+        gap: 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .progress-container > div:last-child span {
+        padding: 6px 14px;
+        font-size: 0.9rem;
+        min-width: 45px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 15px 10px;
+        font-size: 0.85rem;
+    }
+
+    /* Modal de Victoria */
+    .modal-content {
+        max-width: 95%;
+        margin: 10px;
+        border-radius: 15px;
+    }
+
+    .modal-close {
+        top: 10px;
+        right: 15px;
+        font-size: 24px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .modal-header {
+        padding: 30px 20px;
+    }
+
+    .modal-header i {
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+
+    .modal-header h2 {
+        font-size: 1.4rem;
+    }
+
+    .modal-body {
+        padding: 20px 15px;
+    }
+
+    .modal-body p {
+        font-size: 1rem;
+        margin: 12px 0;
+    }
+
+    .modal-body p:first-child {
+        font-size: 1.1rem;
+    }
+
+    .modal-body span {
+        padding: 4px 12px;
+        font-size: 0.95rem;
+        margin-left: 5px;
+    }
+
+    .modal-footer {
+        padding: 15px;
+    }
+
+    .modal-footer .btn {
+        width: 100%;
+        padding: 14px 20px;
+        font-size: 1rem;
+    }
+
+    /* Achievement Notification */
+    .achievement-notification {
+        min-width: 90%;
+        padding: 15px 20px;
+        gap: 15px;
+        top: -200px;
+    }
+
+    .achievement-notification.show {
+        top: 15px;
+    }
+
+    .achievement-icon {
+        font-size: 40px;
+    }
+
+    .achievement-title {
+        font-size: 1.2rem;
+    }
+
+    .achievement-message {
+        font-size: 0.85rem;
+    }
+
+    /* Confeti más pequeño en móvil */
+    .confetti {
+        width: 8px;
+        height: 8px;
+        font-size: 12px;
+    }
+}
+
+/* Móviles muy pequeños (hasta 360px) */
+@media (max-width: 360px) {
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    .subtitle {
+        font-size: 0.8rem;
+    }
+
+    .topic-item {
+        padding: 8px 6px;
+        font-size: 0.75rem;
+    }
+
+    .exercise-title {
+        font-size: 1rem;
+    }
+
+    .problem-display {
+        font-size: 1rem;
+        padding: 10px 6px;
+    }
+
+    .math-input {
+        font-size: 1rem;
+        padding: 10px 8px;
+    }
+
+    .btn {
+        padding: 10px 12px;
+        font-size: 0.9rem;
+    }
+
+    .progress-text {
+        font-size: 0.95rem;
+    }
+
+    .progress-text span {
+        font-size: 1.1rem;
+    }
+}
+
+/* Landscape mode en móviles */
+@media (max-width: 900px) and (orientation: landscape) {
+    .main-content {
+        flex-direction: row;
+    }
+
+    .sidebar {
+        width: 200px;
+        border-right: 2px solid #ddd;
+        border-bottom: none;
+    }
+
+    .topic-list {
+        grid-template-columns: 1fr;
+    }
+
+    .topic-item {
+        flex-direction: row;
+        text-align: left;
+        gap: 10px;
+    }
+
+    .topic-item i {
+        font-size: 1rem;
+    }
+
+    .topic-item span {
+        font-size: 0.85rem;
+    }
+
+    .content-area {
+        overflow-y: auto;
+        max-height: 80vh;
+    }
+}

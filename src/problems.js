@@ -1,6 +1,5 @@
 import { hideFeedback } from './utils.js'
 
-
 export function newProblem(topic, problems, appState) {
 // Seleccionar un problema aleatorio
     const totalProblems = problems[topic].length;
@@ -37,6 +36,7 @@ document.getElementById(`${topic}-answer`).value = ''
 
  // Habilitar botones por si estaban deshabilitados
  document.getElementById(`new-${topic}`).disabled = false;
+ document.getElementById(`check-${topic}`).disabled = false;
 
 // Actualizar MathJax
 if (window.MathJax) {
