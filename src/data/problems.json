@@ -8,7 +8,8 @@
         "Combinar términos con x: 3x - 2x = x",
         "Combinar constantes: 5 + 7 = 12",
         "Resultado: x + 12"
-      ]
+      ],
+      "score": 13
     },
     {
       "problem": "4a - 2b + 3a + 5b",
@@ -18,7 +19,8 @@
         "Combinar términos con a: 4a + 3a = 7a",
         "Combinar términos con b: -2b + 5b = 3b",
         "Resultado: 7a + 3b"
-      ]
+      ],
+      "score": 11
     },
     {
       "problem": "5x - 3 + 2x + 8 - x",
@@ -28,7 +30,96 @@
         "Combinar términos con x: 5x + 2x - x = 6x",
         "Combinar constantes: -3 + 8 = 5",
         "Resultado: 6x + 5"
-      ]
+      ],
+      "score": 8
+    },
+    {
+      "problem": "2(3x + 4) - 5x",
+      "answer": "x + 8",
+      "steps": [
+        "Aplicar propiedad distributiva: 2 × 3x + 2 × 4 = 6x + 8",
+        "Reescribir la expresión: 6x + 8 - 5x",
+        "Combinar términos semejantes: 6x - 5x = x",
+        "Resultado: x + 8"
+      ],
+      "score": 17
+    },
+    {
+      "problem": "3(x - 2) + 4(2x + 1)",
+      "answer": "11x - 2",
+      "steps": [
+        "Aplicar propiedad distributiva: 3 × x - 3 × 2 = 3x - 6",
+        "Aplicar propiedad distributiva: 4 × 2x + 4 × 1 = 8x + 4",
+        "Combinar expresiones: 3x - 6 + 8x + 4",
+        "Combinar términos semejantes: 3x + 8x = 11x; -6 + 4 = -2",
+        "Resultado: 11x - 2"
+      ],
+      "score": 19
+    },
+    {
+      "problem": "5y - 2(3y - 4) + 7",
+      "answer": "-y + 15",
+      "steps": [
+        "Aplicar propiedad distributiva: -2 × 3y + (-2) × (-4) = -6y + 8",
+        "Reescribir la expresión: 5y - 6y + 8 + 7",
+        "Combinar términos con y: 5y - 6y = -y",
+        "Combinar constantes: 8 + 7 = 15",
+        "Resultado: -y + 15"
+      ],
+      "score": 20
+    },
+    {
+      "problem": "4(2a - 3b) - 3(a + 2b)",
+      "answer": "5a - 18b",
+      "steps": [
+        "Aplicar primera propiedad distributiva: 4 × 2a - 4 × 3b = 8a - 12b",
+        "Aplicar segunda propiedad distributiva: -3 × a - 3 × 2b = -3a - 6b",
+        "Combinar expresiones: 8a - 12b - 3a - 6b",
+        "Combinar términos con a: 8a - 3a = 5a",
+        "Combinar términos con b: -12b - 6b = -18b",
+        "Resultado: 5a - 18b"
+      ],
+      "score": 28
+    },
+    {
+      "problem": "2x² + 3x - 5 + 4x² - 2x + 7",
+      "answer": "6x² + x + 2",
+      "steps": [
+        "Identificar términos semejantes: 2x² y 4x² son términos cuadráticos; 3x y -2x son términos lineales; -5 y 7 son constantes",
+        "Combinar términos cuadráticos: 2x² + 4x² = 6x²",
+        "Combinar términos lineales: 3x - 2x = x",
+        "Combinar constantes: -5 + 7 = 2",
+        "Resultado: 6x² + x + 2"
+      ],
+      "score": 12
+    },
+    {
+      "problem": "3(m - 2n) + 2(3m + n) - 4(m - n)",
+      "answer": "5m - 4n",
+      "steps": [
+        "Aplicar primera propiedad distributiva: 3 × m - 3 × 2n = 3m - 6n",
+        "Aplicar segunda propiedad distributiva: 2 × 3m + 2 × n = 6m + 2n",
+        "Aplicar tercera propiedad distributiva: -4 × m - 4 × (-n) = -4m + 4n",
+        "Combinar todas las expresiones: 3m - 6n + 6m + 2n - 4m + 4n",
+        "Combinar términos con m: 3m + 6m - 4m = 5m",
+        "Combinar términos con n: -6n + 2n + 4n = -4n",
+        "Resultado: 5m - 4n"
+      ],
+      "score": 13
+    },
+    {
+      "problem": "2(3x - 4y) - 3(2x + y) + 5(x - 2y)",
+      "answer": "5x - 21y",
+      "steps": [
+        "Aplicar primera propiedad distributiva: 2 × 3x - 2 × 4y = 6x - 8y",
+        "Aplicar segunda propiedad distributiva: -3 × 2x - 3 × y = -6x - 3y",
+        "Aplicar tercera propiedad distributiva: 5 × x - 5 × 2y = 5x - 10y",
+        "Combinar todas las expresiones: 6x - 8y - 6x - 3y + 5x - 10y",
+        "Combinar términos con x: 6x - 6x + 5x = 5x",
+        "Combinar términos con y: -8y - 3y - 10y = -21y",
+        "Resultado: 5x - 21y"
+      ],
+      "score": 12
     }
   ],
   "polynomials": [
@@ -40,7 +131,8 @@
         "Agrupar términos semejantes: (3x² + 2x²) + (2x - 4x) + (-5 + 3)",
         "Sumar coeficientes: 5x² - 2x - 2",
         "Resultado: 5x² - 2x - 2"
-      ]
+      ],
+      "score": 11
     },
     {
       "problem": "(4x² - 3x + 2) - (2x² + x - 5)",
@@ -50,7 +142,8 @@
         "Agrupar términos semejantes: (4x² - 2x²) + (-3x - x) + (2 + 5)",
         "Sumar/Restar coeficientes: 2x² - 4x + 7",
         "Resultado: 2x² - 4x + 7"
-      ]
+      ],
+      "score": 8
     },
     {
       "problem": "2x(3x - 4)",
@@ -59,7 +152,83 @@
         "Aplicar propiedad distributiva: 2x * 3x + 2x * (-4)",
         "Multiplicar términos: 6x² - 8x",
         "Resultado: 6x² - 8x"
-      ]
+      ],
+      "score": 13
+    },
+    {
+      "problem": "(2x + 3)(x - 4)",
+      "answer": "2x² - 5x - 12",
+      "steps": [
+        "Aplicar propiedad distributiva (FOIL): (2x)(x) + (2x)(-4) + (3)(x) + (3)(-4)",
+        "Multiplicar términos: 2x² - 8x + 3x - 12",
+        "Combinar términos semejantes: 2x² - 5x - 12",
+        "Resultado: 2x² - 5x - 12"
+      ],
+      "score": 14
+    },
+    {
+      "problem": "(3x - 2)(2x² + x - 5)",
+      "answer": "6x³ - x² - 17x + 10",
+      "steps": [
+        "Aplicar propiedad distributiva: 3x(2x² + x - 5) - 2(2x² + x - 5)",
+        "Primera distribución: 6x³ + 3x² - 15x",
+        "Segunda distribución: -4x² - 2x + 10",
+        "Combinar términos: 6x³ + (3x² - 4x²) + (-15x - 2x) + 10",
+        "Resultado: 6x³ - x² - 17x + 10"
+      ],
+      "score": 22
+    },
+    {
+      "problem": "(x + 2)³",
+      "answer": "x³ + 6x² + 12x + 8",
+      "steps": [
+        "Expresar como (x + 2)(x + 2)(x + 2)",
+        "Multiplicar primeros dos: (x + 2)(x + 2) = x² + 4x + 4",
+        "Multiplicar resultado por (x + 2): (x² + 4x + 4)(x + 2)",
+        "Aplicar propiedad distributiva: x³ + 2x² + 4x² + 8x + 4x + 8",
+        "Combinar términos semejantes: x³ + 6x² + 12x + 8",
+        "Resultado: x³ + 6x² + 12x + 8"
+      ],
+      "score": 22
+    },
+    {
+      "problem": "(2x² - 3x + 1)(x² + 2x - 3)",
+      "answer": "2x⁴ + x³ - 11x² + 11x - 3",
+      "steps": [
+        "Aplicar propiedad distributiva: 2x²(x² + 2x - 3) - 3x(x² + 2x - 3) + 1(x² + 2x - 3)",
+        "Primera distribución: 2x⁴ + 4x³ - 6x²",
+        "Segunda distribución: -3x³ - 6x² + 9x",
+        "Tercera distribución: x² + 2x - 3",
+        "Combinar términos semejantes: 2x⁴ + (4x³ - 3x³) + (-6x² - 6x² + x²) + (9x + 2x) - 3",
+        "Resultado: 2x⁴ + x³ - 11x² + 11x - 3"
+      ],
+      "score": 30
+    },
+    {
+      "problem": "(x² - 4x + 4) ÷ (x - 2)",
+      "answer": "x - 2",
+      "steps": [
+        "Reconocer trinomio cuadrado perfecto: x² - 4x + 4 = (x - 2)²",
+        "Dividir: (x - 2)² ÷ (x - 2)",
+        "Simplificar: x - 2",
+        "Resultado: x - 2"
+      ],
+      "score": 18
+    },
+    {
+      "problem": "(3x³ - 5x² + 2x - 8) ÷ (x - 2)",
+      "answer": "3x² + x + 4",
+      "steps": [
+        "Aplicar división sintética o polinómica",
+        "Dividir 3x³ ÷ x = 3x²",
+        "Multiplicar: 3x²(x - 2) = 3x³ - 6x²",
+        "Restar: (3x³ - 5x²) - (3x³ - 6x²) = x²",
+        "Bajar siguiente término: x² + 2x",
+        "Dividir: x² ÷ x = x",
+        "Continuar proceso hasta obtener cociente",
+        "Resultado: 3x² + x + 4"
+      ],
+      "score": 22
     }
   ],
   "equations": [
@@ -71,7 +240,8 @@
         "Simplificar: 3x = 15",
         "Dividir ambos lados entre 3: 3x/3 = 15/3",
         "Simplificar: x = 5"
-      ]
+      ],
+      "score": 11
     },
     {
       "problem": "2(x - 3) = 10",
@@ -82,7 +252,8 @@
         "Simplificar: 2x = 16",
         "Dividir ambos lados entre 2: 2x/2 = 16/2",
         "Simplificar: x = 8"
-      ]
+      ],
+      "score": 8
     },
     {
       "problem": "5x - 3 = 2x + 9",
@@ -94,41 +265,213 @@
         "Simplificar: 3x = 12",
         "Dividir ambos lados entre 3: 3x/3 = 12/3",
         "Simplificar: x = 4"
-      ]
+      ],
+      "score": 18
+    },
+    {
+      "problem": "4(x + 2) - 3 = 2x + 13",
+      "answer": "x = 4",
+      "steps": [
+        "Distribuir: 4x + 8 - 3 = 2x + 13",
+        "Simplificar izquierda: 4x + 5 = 2x + 13",
+        "Restar 2x de ambos lados: 4x - 2x + 5 = 13",
+        "Simplificar: 2x + 5 = 13",
+        "Restar 5 de ambos lados: 2x = 8",
+        "Dividir entre 2: x = 4"
+      ],
+      "score": 14
+    },
+    {
+      "problem": "7 - 2x = 3x + 22",
+      "answer": "x = -3",
+      "steps": [
+        "Sumar 2x a ambos lados: 7 = 5x + 22",
+        "Restar 22 de ambos lados: 7 - 22 = 5x",
+        "Simplificar: -15 = 5x",
+        "Dividir entre 5: -3 = x",
+        "Reordenar: x = -3"
+      ],
+      "score": 17
+    },
+    {
+      "problem": "2(3x - 1) = 4(x + 3) - 2",
+      "answer": "x = 6",
+      "steps": [
+        "Distribuir ambos lados: 6x - 2 = 4x + 12 - 2",
+        "Simplificar derecha: 6x - 2 = 4x + 10",
+        "Restar 4x de ambos lados: 2x - 2 = 10",
+        "Sumar 2 a ambos lados: 2x = 12",
+        "Dividir entre 2: x = 6"
+      ],
+      "score": 20
+    },
+    {
+      "problem": "5 - 3(x + 2) = 2x - 7",
+      "answer": "x = 1.2",
+      "steps": [
+        "Distribuir: 5 - 3x - 6 = 2x - 7",
+        "Simplificar izquierda: -3x - 1 = 2x - 7",
+        "Sumar 3x a ambos lados: -1 = 5x - 7",
+        "Sumar 7 a ambos lados: 6 = 5x",
+        "Dividir entre 5: x = 6/5 = 1.2"
+      ],
+      "score": 23
+    },
+    {
+      "problem": "x/2 + 3 = 2x - 5",
+      "answer": "x = 5.33",
+      "steps": [
+        "Multiplicar toda la ecuación por 2: x + 6 = 4x - 10",
+        "Restar x de ambos lados: 6 = 3x - 10",
+        "Sumar 10 a ambos lados: 16 = 3x",
+        "Dividir entre 3: x = 16/3 ≈ 5.33"
+      ],
+      "score": 17
+    },
+    {
+      "problem": "3(x - 4) + 2 = 5(2x + 1) - 7",
+      "answer": "x = -1.14",
+      "steps": [
+        "Distribuir ambos lados: 3x - 12 + 2 = 10x + 5 - 7",
+        "Simplificar: 3x - 10 = 10x - 2",
+        "Restar 3x de ambos lados: -10 = 7x - 2",
+        "Sumar 2 a ambos lados: -8 = 7x",
+        "Dividir entre 7: x = -8/7 ≈ -1.14"
+      ],
+      "score": 24
+    },
+    {
+      "problem": "(2x + 1)/3 = (x - 4)/2",
+      "answer": "x = -14",
+      "steps": [
+        "Multiplicar cruzado: 2(2x + 1) = 3(x - 4)",
+        "Distribuir: 4x + 2 = 3x - 12",
+        "Restar 3x de ambos lados: x + 2 = -12",
+        "Restar 2 de ambos lados: x = -14"
+      ],
+      "score": 23
     }
   ],
   "factoring": [
-      {
-    "problem": "3x + 12",
-    "answer": "3(x + 4)",
-    "steps": [
-      "Identificar el máximo común divisor (MCD) de los coeficientes 3 y 12, que es 3.",
-      "El factor común es 3.",
-      "Dividir cada término por el factor común: 3x/3 = x; 12/3 = 4.",
-      "Escribir el factor común fuera de un paréntesis: 3(x + 4)."
-    ]
-  },
-  {
-    "problem": "8a² - 16a",
-    "answer": "8a(a - 2)",
-    "steps": [
-      "Identificar el MCD de 8 y 16, que es 8.",
-      "Identificar la variable común con el menor exponente: 'a'.",
-      "El factor común completo es 8a.",
-      "Dividir cada término por 8a: 8a² / (8a) = a; -16a / (8a) = -2.",
-      "Escribir el resultado: 8a(a - 2)."
-    ]
-  },
-  {
-    "problem": "x² - 81",
-    "answer": "(x + 9)(x - 9)",
-    "steps": [
-      "Reconocer que es una resta (diferencia) de dos términos con raíz cuadrada exacta.",
-      "Calcular la raíz cuadrada del primer término: √x² = x.",
-      "Calcular la raíz cuadrada del segundo término: √81 = 9.",
-      "Aplicar la fórmula de diferencia de cuadrados (a+b)(a-b).",
-      "Sustituir: (x + 9)(x - 9)."
-    ]
-  }
+    {
+      "problem": "3x + 12",
+      "answer": "3(x + 4)",
+      "steps": [
+        "Identificar el máximo común divisor (MCD) de los coeficientes 3 y 12, que es 3.",
+        "El factor común es 3.",
+        "Dividir cada término por el factor común: 3x/3 = x; 12/3 = 4.",
+        "Escribir el factor común fuera de un paréntesis: 3(x + 4)."
+      ],
+      "score": 11
+    },
+    {
+      "problem": "8a² - 16a",
+      "answer": "8a(a - 2)",
+      "steps": [
+        "Identificar el MCD de 8 y 16, que es 8.",
+        "Identificar la variable común con el menor exponente: 'a'.",
+        "El factor común completo es 8a.",
+        "Dividir cada término por 8a: 8a² / (8a) = a; -16a / (8a) = -2.",
+        "Escribir el resultado: 8a(a - 2)."
+      ],
+      "score": 7
+    },
+    {
+      "problem": "x² - 81",
+      "answer": "(x + 9)(x - 9)",
+      "steps": [
+        "Reconocer que es una resta (diferencia) de dos términos con raíz cuadrada exacta.",
+        "Calcular la raíz cuadrada del primer término: √x² = x.",
+        "Calcular la raíz cuadrada del segundo término: √81 = 9.",
+        "Aplicar la fórmula de diferencia de cuadrados (a+b)(a-b).",
+        "Sustituir: (x + 9)(x - 9)."
+      ],
+      "score": 17
+    },
+    {
+      "problem": "x² + 7x + 12",
+      "answer": "(x + 3)(x + 4)",
+      "steps": [
+        "Identificar que es un trinomio de la forma x² + bx + c.",
+        "Buscar dos números que multipliquen a 12 y sumen a 7.",
+        "Los números son 3 y 4: 3 × 4 = 12; 3 + 4 = 7.",
+        "Escribir los factores: (x + 3)(x + 4)."
+      ],
+      "score": 14
+    },
+    {
+      "problem": "2x² + 11x + 12",
+      "answer": "(2x + 3)(x + 4)",
+      "steps": [
+        "Identificar trinomio de la forma ax² + bx + c.",
+        "Multiplicar a × c: 2 × 12 = 24.",
+        "Buscar dos números que multipliquen a 24 y sumen a 11: 3 y 8.",
+        "Reescribir el término medio: 2x² + 3x + 8x + 12.",
+        "Factorizar por agrupación: x(2x + 3) + 4(2x + 3).",
+        "Factor común: (2x + 3)(x + 4)."
+      ],
+      "score": 18
+    },
+    {
+      "problem": "4x² - 12x + 9",
+      "answer": "(2x - 3)²",
+      "steps": [
+        "Reconocer trinomio cuadrado perfecto.",
+        "Verificar: √4x² = 2x; √9 = 3; 2(2x)(3) = 12x.",
+        "Aplicar fórmula: a² - 2ab + b² = (a - b)².",
+        "Sustituir: (2x - 3)²."
+      ],
+      "score": 18
+    },
+    {
+      "problem": "6x² - 13x - 5",
+      "answer": "(2x - 5)(3x + 1)",
+      "steps": [
+        "Multiplicar a × c: 6 × (-5) = -30.",
+        "Buscar dos números que multipliquen a -30 y sumen a -13: -15 y 2.",
+        "Reescribir: 6x² - 15x + 2x - 5.",
+        "Factorizar por agrupación: 3x(2x - 5) + 1(2x - 5).",
+        "Factor común: (2x - 5)(3x + 1)."
+      ],
+      "score": 20
+    },
+    {
+      "problem": "x³ - 27",
+      "answer": "(x - 3)(x² + 3x + 9)",
+      "steps": [
+        "Reconocer diferencia de cubos: a³ - b³.",
+        "Identificar: a = x, b = 3 (porque 3³ = 27).",
+        "Aplicar fórmula: a³ - b³ = (a - b)(a² + ab + b²).",
+        "Sustituir: (x - 3)(x² + 3x + 9)."
+      ],
+      "score": 28
+    },
+    {
+      "problem": "3x³ - 12x",
+      "answer": "3x(x + 2)(x - 2)",
+      "steps": [
+        "Identificar factor común: MCD de 3 y 12 es 3, variable común es x.",
+        "Factor común: 3x.",
+        "Dividir: 3x³/(3x) = x²; -12x/(3x) = -4.",
+        "Resultado parcial: 3x(x² - 4).",
+        "Factorizar diferencia de cuadrados: x² - 4 = (x + 2)(x - 2).",
+        "Resultado final: 3x(x + 2)(x - 2)."
+      ],
+      "score": 18
+    },
+    {
+      "problem": "2x³ + 16",
+      "answer": "2(x + 2)(x² - 2x + 4)",
+      "steps": [
+        "Identificar factor común: MCD de 2 y 16 es 2.",
+        "Factor común: 2.",
+        "Dividir: 2x³/2 = x³; 16/2 = 8.",
+        "Resultado parcial: 2(x³ + 8).",
+        "Reconocer suma de cubos: x³ + 2³.",
+        "Aplicar fórmula: a³ + b³ = (a + b)(a² - ab + b²).",
+        "Sustituir: 2(x + 2)(x² - 2x + 4)."
+      ],
+      "score": 24
+    }
   ]
 }

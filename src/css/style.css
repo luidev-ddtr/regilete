@@ -1,4 +1,14 @@
+/* Importar estilos del modal */
+@import url('modal.css');
 
+/* Importar estilos de logros */
+@import url('achievements.css');
+
+/* Importar animaciones de progreso */
+@import url('progress-animations.css');
+
+/* Importar estilos responsive (debe ir al final) */
+@import url('mobile-responsive.css');
 :root {
 --primary: #3498db;
 --secondary: #2ecc71;
@@ -320,4 +330,16 @@ color: white;
 .button-group {
     flex-direction: column;
 }
+}
+
+/* Transición de desvanecimiento para el contenedor de ejercicios */
+.exercise-container {
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.exercise-container.fade-out {
+  opacity: 0;
+  transform: translateY(-10px);
 }
