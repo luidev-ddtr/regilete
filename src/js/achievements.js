@@ -89,13 +89,13 @@ function showAchievementNotification(achievement, topic) {
         notification.classList.add('show');
     }, 100);
 
-    // Remover después de 4 segundos
+    // Remover después de 8 segundos (el doble de tiempo)
     setTimeout(() => {
         notification.classList.remove('show');
         setTimeout(() => {
             notification.remove();
         }, 500);
-    }, 4000);
+    }, 5500);
 }
 
 /**

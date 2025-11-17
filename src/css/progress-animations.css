@@ -235,11 +235,11 @@
         transform: scale(0.95);
     }
     75% {
-        transform: scale(1.03);
+        transform: scale(1.03); 
     }
     100% {
         transform: scale(1);
-    }
+    } 
 }
 
 /* Resplandor para puntuaciones altas */
