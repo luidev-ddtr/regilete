@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/regilete/logo.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>AlgebraInteractiva - Aprende Álgebra Paso a Paso</title>
     <link
@@ -17,50 +17,54 @@
       async
       src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
     ></script>
-    <script type="module" crossorigin src="/regilete/assets/index-BwG42xed.js"></script>
-    <link rel="stylesheet" crossorigin href="/regilete/assets/index-265WZeC9.css">
-  </head>
+    <script type="module" crossorigin src="/regilete/assets/index-CtnU5apg.js"></script>
+    <link rel="stylesheet" crossorigin href="/regilete/assets/index-CfCp9Why.css">
+  </head> 
   <body>
     <div class="container">
       <header> 
         <div class="logo"> 
           <i class="fas fa-square-root-alt"></i>
-          <h1>AlgebraInteractiva</h1>
+          <h1>Algebra Interactiva</h1>
         </div>
         <p class="subtitle">
           Aprende álgebra paso a paso con retroalimentación inteligente
         </p>
       </header>
       <div class="main-content">
-        <div class="sidebar">
-          <div class="sidebar-title">
-            <i class="fas fa-list"></i>
-            <span>Temas de Álgebra</span>
-          </div>
-          <ul class="topic-list">
-            <li class="topic-item active" data-topic="operations">
-              <i class="fas fa-calculator"></i>
-              <span>Operaciones Básicas</span>
-            </li>
-            <li class="topic-item" data-topic="polynomials">
-              <i class="fas fa-project-diagram"></i>
-              <span>Polinomios</span>
-            </li>
-            <li class="topic-item" data-topic="equations">
-              <i class="fas fa-equals"></i>
-              <span>Ecuaciones</span>
-            </li>
-            <li class="topic-item" data-topic="factoring">
-              <i class="fas fa-puzzle-piece"></i>
-              <span>Factorización</span>
-            </li>
-            <li class="topic-item" data-topic="practice">
-              <i class="fas fa-brain"></i>
-              <span>Práctica Integrada</span>
-            </li>
-          </ul>
-        </div>
-        <div class="content-area">
+<!-- Sección de Sidebar - Reemplaza tu sidebar actual con esto -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-title">
+    <div style="display: flex; align-items: center; gap: 10px;">
+      <i class="fas fa-list"></i>
+      <span>Temas de Álgebra</span>
+    </div>
+    <!-- El icono de chevron se agrega automáticamente por JavaScript -->
+  </div>
+  <ul class="topic-list">
+    <li class="topic-item active" data-topic="operations">
+      <i class="fas fa-calculator"></i>
+      <span>Operaciones Básicas</span>
+    </li>
+    <li class="topic-item" data-topic="polynomials">
+      <i class="fas fa-project-diagram"></i>
+      <span>Polinomios</span>
+    </li>
+    <li class="topic-item" data-topic="equations">
+      <i class="fas fa-equals"></i>
+      <span>Ecuaciones</span>
+    </li>
+    <li class="topic-item" data-topic="factoring">
+      <i class="fas fa-puzzle-piece"></i>
+      <span>Factorización</span>
+    </li>
+    <li class="topic-item" data-topic="practice">
+      <i class="fas fa-brain"></i>
+      <span>Práctica Integrada</span>
+    </li>
+  </ul>
+</div>
+        <div class="content-area"> 
           <!-- Operaciones Básicas -->
           <div class="topic-content active" id="operations-content">
             <div class="exercise-container">
@@ -72,7 +76,6 @@
               <div class="problem-display" id="operations-problem">
                 \( 3x + 5 - 2x + 7 \)
               </div>
-7
               <div class="input-group">
                 <label class="input-label">Simplifica la expresión:</label>
                 <input
@@ -87,7 +90,7 @@
                 <button class="btn btn-primary" id="check-operations">
                   <i class="fas fa-check"></i> Verificar Respuesta
                 </button>
-                <button class="btn btn-secondary" id="hint-operations">
+                <button class="btn btn-secondary" id="hint-operations" style="display: none;">
                   <i class="fas fa-lightbulb"></i> Pista
                 </button>
                 <button class="btn btn-warning" id="new-operations">
@@ -131,7 +134,7 @@
               </div>
             </div>
           </div>
-
+          
           <!-- Polinomios -->
           <div class="topic-content" id="polynomials-content">
             <div class="exercise-container">
@@ -158,7 +161,7 @@
                 <button class="btn btn-primary" id="check-polynomials">
                   <i class="fas fa-check"></i> Verificar Respuesta
                 </button>
-                <button class="btn btn-secondary" id="hint-polynomials">
+                <button class="btn btn-secondary" id="hint-polynomials" style="display: none;">
                   <i class="fas fa-lightbulb"></i> Pista
                 </button>
                 <button class="btn btn-warning" id="new-polynomials">
@@ -197,7 +200,7 @@
                 </div>
               </div>
             </div>
-
+ 
             <div class="progress-container">
               <div class="progress-text">
                 Progreso: <span id="polynomials-progress">0%</span>
@@ -239,7 +242,7 @@
                 <button class="btn btn-primary" id="check-equations">
                   <i class="fas fa-check"></i> Verificar Respuesta
                 </button>
-                <button class="btn btn-secondary" id="hint-equations">
+                <button class="btn btn-secondary" id="hint-equations" style="display: none;">
                   <i class="fas fa-lightbulb"></i> Pista
                 </button>
                 <button class="btn btn-warning" id="new-equations">
@@ -316,7 +319,7 @@
                 <button class="btn btn-primary" id="check-factoring">
                   <i class="fas fa-check"></i> Verificar Respuesta
                 </button>
-                <button class="btn btn-secondary" id="hint-factoring">
+                <button class="btn btn-secondary" id="hint-factoring" style="display: none;">
                   <i class="fas fa-lightbulb"></i> Pista
                 </button>
                 <button class="btn btn-warning" id="new-factoring">
@@ -372,7 +375,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> <!-- Cierre de main-content -->
 
       <footer>
         <p>
@@ -401,6 +404,6 @@
         </div>
       </div>
     </div>
-
+    
   </body>
 </html>
